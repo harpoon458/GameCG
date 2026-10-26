@@ -303,13 +303,11 @@ The keycard is 43 steps from the start, and the exit is 21 steps beyond the keyc
 
 ## 5. Using the Levels
 
-1. Put `level1.txt` to `level10.txt` in your project's `levels/` folder.
-2. The base game from the build plan loads only `levels/level1.txt`. To play another level, change the path your game loads, or implement stretch goal ST-03 so Level Complete moves to the next file.
-3. To have your AI assistant add the level chain, send this:
+The game loads `level1.txt` to `level10.txt` from the `levels/` folder in order.
 
-```text
-Implement stretch goal ST-03 using the same milestone output format. The game now has ten levels: levels/level1.txt to levels/level10.txt. After Level Complete, pressing Enter loads the next level, with health and ammo reset to their starting values and the kill count and total time carried over. After level 10, show an All Levels Complete screen. Keep existing names and logic untouched and show only the files that change, in full.
-```
+- On Level Complete, press Enter to load the next level. Health and ammo reset to their starting values; kills and time carry over.
+- After level 10, an All Levels Complete screen shows the total kills and time.
+- R replays the current level, and Esc returns to the menu.
 
 ## 6. Regenerating or Changing Levels 2 to 10
 
